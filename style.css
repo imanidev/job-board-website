@@ -1,0 +1,117 @@
+/* Use color variables for easy color updates */
+:root {
+    --primary-color: #add8e6;
+    --secondary-color: #87ceeb;
+    --tertiary-color: #ffffff;
+}
+
+/* Set up basic typography and layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header,
+footer {
+    background-color: var(--primary-color);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+nav {
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li #signup {
+
+    color: greenyellow;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Style the job listings */
+.job-listings {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.job-listing {
+    background-color: var(--tertiary-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.position {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    margin: 0;
+}
+
+.location {
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.description {
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    margin: 0.5;
+}
+
+.apply-button {
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 14px;
+    padding: 8px 7px;
+}
+
+.apply-button:hover {
+    background-color: var(--primary-color);
+}
