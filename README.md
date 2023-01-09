@@ -8,4 +8,4 @@ This is a job board website that allows users to browse and apply for job openin
 - Provide details for each job listing, including the position, location, and job description
 - Allow users to submit an application for a job opening
 ## Technologies
-This project was built using HTML, CSS, and JavaScript.
+This project was built using HTML and CSS
